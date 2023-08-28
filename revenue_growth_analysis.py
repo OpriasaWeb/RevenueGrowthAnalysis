@@ -12,23 +12,14 @@ normal_ticket_revenue = 0
 for i in data.values():
   if i < 18:
     normal_ticket_revenue = normal_ticket_revenue + 5
-
-for k in data.values():
-  if k >= 18:
+  elif i >= 18:
     normal_ticket_revenue = normal_ticket_revenue + 20
-
-# print(normal_ticket_revenue)
 
 for i in data.values():
   if i < age:
     revenue = revenue + 5
-
-for k in data.values():
-  if k >= age:
+  elif i >= age:
     revenue = revenue + 20
-
-# print(revenue)
-
 
 
 revenue = (revenue - normal_ticket_revenue) / normal_ticket_revenue * 100
